@@ -38,7 +38,24 @@
         <div class="flight-sidebar">
           <div class="sidebar-header">
             <span>Filter</span>
-            <span>minimize</span>
+            <span>minimize <img src="../assets/nav.svg" alt=""></span>
+          </div>
+
+          <div class="sidebar-body mb-3">
+            <span>Class</span>
+            <span><i class="el-icon-arrow-up"></i></span>
+          </div>
+
+          <div class="flight-class">
+            <el-checkbox-group v-model="checkList">
+              <el-checkbox label="Economy"></el-checkbox>
+              <br/>
+              <el-checkbox label="Premium"></el-checkbox>
+              <br/>
+              <el-checkbox label="Premium Economy"></el-checkbox>
+              <br/>
+              <el-checkbox label="First Class"></el-checkbox>
+            </el-checkbox-group>
           </div>
         </div>
         <div class="flight-data">
@@ -69,9 +86,12 @@
                     value: 'ascending',
                     label: 'Price(Ascending) '
                 },],
-                value: ''
+                value: '',
+                checkList: ['Option A']
             }
+
         }
+
     }
 </script>
 
@@ -79,7 +99,7 @@
   .about {
     background: #f3f9f9;
     min-height: 80vh;
-    padding: 2%;
+    padding: 3% 2%;
   }
 
   h1 {
@@ -87,24 +107,34 @@
     color: #ffffff;
   }
 
-  .flight-main{
+  .flight-main {
     display: flex;
     justify-content: space-between;
-  }
-  .flight-sidebar{
-    padding: 10px;
-    max-width: 300px;
-    width:30%;
-    flex-shrink: 0;
-    background: #ffffff;
-  }
-  .flight-data{
-    flex-grow: 1;
   }
 
-  .sidebar-header{
+  .flight-sidebar {
+    padding: 15px;
+    max-width: 300px;
+    width: 30%;
+    flex-shrink: 0;
+    background: #ffffff;
+    margin-right: 30px;
+  }
+
+  .flight-data {
+    flex-grow: 1;
+    background: #fff;
+  }
+
+  .sidebar-header {
     display: flex;
     justify-content: space-between;
+  }
+
+  .sidebar-body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
   }
 </style>
 
