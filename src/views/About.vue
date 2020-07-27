@@ -30,8 +30,8 @@
 
 
     <!--=============================
-                  Flight Dashboard
-          =============================-->
+               Flight Dashboard
+        =============================-->
 
     <div class="container">
       <div class="flight-main">
@@ -58,8 +58,71 @@
             </el-checkbox-group>
           </div>
         </div>
-        <div class="flight-data">
 
+
+        <!--=============================
+                    Flight Data
+            =============================-->
+        <div class="flight-data">
+          <div class="single-flight-status">
+
+            <div class="sf-take-off-time">
+              <span><img src="../assets/to.png" alt=""></span>
+              <span>18.01.2019</span>
+            </div>
+
+
+            <div class="airlines-name">
+              <div class="airlines-logo">
+                <img src="../assets/ta.png" alt="">
+              </div>
+              <div class="flight-info">
+                <div class="airlines-name">
+                  Turkish Airlines
+                </div>
+                <div class="available-seat">
+                  <span>Economy  - </span>
+                  <span>Last 2 seat </span>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="flight-query-info">
+
+              <div class="takeoff-point">
+                <span class="flight-start-time">
+                  06:30
+                </span>
+                <span class="flight-city">
+                  MOS
+                </span>
+              </div>
+
+              <div class="approx-time-distance">
+                <span class="flight-app-time">
+                  3h 15m
+                </span>
+                <div class="flight-type">
+                  Direct Flight
+                </div>
+              </div>
+
+
+              <div class="landing-point">
+                <span class="flight-end-time">
+                  19:15
+                </span>
+                <span class="destination-city">
+                  AYT
+                </span>
+              </div>
+
+
+            </div>
+
+          </div>
         </div>
       </div>
 
@@ -102,10 +165,6 @@
     padding: 3% 2%;
   }
 
-  h1 {
-    background: coral;
-    color: #ffffff;
-  }
 
   .flight-main {
     display: flex;
@@ -125,6 +184,7 @@
   .flight-data {
     flex-grow: 1;
     background: #fff;
+    padding: 15px;
   }
 
   .sidebar-header {
@@ -136,6 +196,34 @@
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+  }
+
+  .sf-take-off-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .single-flight-status {
+    display: flex;
+    align-items: center;
+    min-height:80px;
+    justify-content: space-between;
+  }
+
+  .airlines-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .airlines-logo {
+      img {
+        width: 50px;
+        height: auto;
+        object-fit: cover;
+      }
+    }
   }
 </style>
 
