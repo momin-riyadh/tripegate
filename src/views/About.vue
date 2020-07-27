@@ -1,6 +1,26 @@
 <template>
   <div class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Choose Your flights <span>from Moscow to Antalya</span></h2>
 
+        </div>
+        <div class="col-md-6">
+          <div class="float-right d-flex">
+          <p>Sort by</p>
+          <el-select v-model="value" placeholder="Select">
+            <el-option
+                    v-for="item in options"
+                    :key="item.value"
+                    :label="item.label"
+                    :value="item.value">
+            </el-option>
+          </el-select>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div>
 </template>
@@ -14,10 +34,28 @@
     })
 
     export default class About extends Vue {
+        data() {
+            return {
+                options: [{
+                    value: 'descending',
+                    label: 'Price(Descending) '
+                }, {
+                    value: 'ascending',
+                    label: 'Price(Ascending) '
+                },],
+                value: ''
+            }
+        }
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+  .about{
+    background: #f3f9f9;
+    min-height: 80vh;
+    padding: 2%;
+  }
+
   h1 {
     background: coral;
     color: #ffffff;
