@@ -4,12 +4,16 @@
       <div class="row">
         <div class="col-md-6">
           <h2>Choose Your flights <span>from Moscow to Antalya</span></h2>
+          <div class="s-flight-time">
+            <span><img src="../assets/land.png" alt=""> 18.01.2019  Mosque to Antalya</span>
+            <span><img src="../assets/to.png" alt=""> 26.01.2019  Mosque to Antalya</span>
+          </div>
 
         </div>
         <div class="col-md-6">
           <div class="float-right d-flex">
-          <p>Sort by</p>
-          <el-select v-model="value" placeholder="Select">
+            <span>Sort by
+                  <el-select v-model="value" placeholder="Select">
             <el-option
                     v-for="item in options"
                     :key="item.value"
@@ -17,6 +21,8 @@
                     :value="item.value">
             </el-option>
           </el-select>
+            </span>
+
           </div>
         </div>
       </div>
@@ -50,7 +56,7 @@
 </script>
 
 <style lang="scss" scoped>
-  .about{
+  .about {
     background: #f3f9f9;
     min-height: 80vh;
     padding: 2%;
