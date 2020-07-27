@@ -110,6 +110,7 @@
   .flight-main {
     display: flex;
     justify-content: space-between;
+    min-height: 500px;
   }
 
   .flight-sidebar {
