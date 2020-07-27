@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <div class="container">
+    <div class="container mb-4">
       <div class="row">
         <div class="col-md-6">
           <h2>Choose Your flights <span>from Moscow to Antalya</span></h2>
@@ -26,6 +26,26 @@
           </div>
         </div>
       </div>
+    </div>
+
+
+    <!--=============================
+                  Flight Dashboard
+          =============================-->
+
+    <div class="container">
+      <div class="flight-main">
+        <div class="flight-sidebar">
+          <div class="sidebar-header">
+            <span>Filter</span>
+            <span>minimize</span>
+          </div>
+        </div>
+        <div class="flight-data">
+
+        </div>
+      </div>
+
     </div>
 
   </div>
@@ -65,6 +85,26 @@
   h1 {
     background: coral;
     color: #ffffff;
+  }
+
+  .flight-main{
+    display: flex;
+    justify-content: space-between;
+  }
+  .flight-sidebar{
+    padding: 10px;
+    max-width: 300px;
+    width:30%;
+    flex-shrink: 0;
+    background: #ffffff;
+  }
+  .flight-data{
+    flex-grow: 1;
+  }
+
+  .sidebar-header{
+    display: flex;
+    justify-content: space-between;
   }
 </style>
 
