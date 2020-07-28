@@ -7,7 +7,7 @@
           <div class="s-flight-time">
             <span class="mr-2"><img src="../assets/land.png"
                                     alt=""> <strong>18.01.2019</strong>  Mosque to Antalya</span>
-            <span class="ml-2"><img src="../assets/to.png" alt=""> <strong>26.01.2019</strong>  Mosque to Antalya</span>
+            <span class="ml-2"><img src="../assets/to.png" alt=""> <strong>26.01.2019</strong>  Antalya to Mosque</span>
           </div>
 
         </div>
@@ -169,10 +169,11 @@
 
   .status-header {
     h3 {
+      text-transform: capitalize;
       > span {
         display: inline-block;
         color: #2c3e50;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
       }
     }
   }
