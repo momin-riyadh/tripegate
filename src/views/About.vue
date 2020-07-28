@@ -2,7 +2,7 @@
   <div class="about">
     <div class="container mb-4">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 status-header">
           <h2>Choose Your flights <span>from Moscow to Antalya</span></h2>
           <div class="s-flight-time">
             <span><img src="../assets/land.png" alt=""> 18.01.2019  Mosque to Antalya</span>
@@ -88,7 +88,6 @@
             </div>
 
 
-
             <div class="flight-query-info">
 
               <div class="takeoff-point">
@@ -121,6 +120,7 @@
 
 
             </div>
+
 
           </div>
         </div>
@@ -166,6 +166,17 @@
   }
 
 
+  .status-header{
+    h3{
+      > span{
+        display: inline-block;
+        color: #2c3e50;
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+
   .flight-main {
     display: flex;
     justify-content: space-between;
@@ -208,7 +219,7 @@
   .single-flight-status {
     display: flex;
     align-items: center;
-    min-height:80px;
+    min-height: 80px;
     justify-content: space-between;
   }
 
@@ -224,6 +235,30 @@
         object-fit: cover;
       }
     }
+  }
+
+  .flight-query-info {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  .takeoff-point, .landing-point, .approx-time-distance {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .approx-time-distance {
+    align-items: center;
+  }
+
+  .takeoff-point {
+    align-items: flex-start;
+  }
+
+  .landing-point {
+    align-items: flex-end;
   }
 </style>
 
