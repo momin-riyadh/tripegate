@@ -9,7 +9,6 @@
                                     alt=""> <strong>18.01.2019</strong>  Mosque to Antalya</span>
             <span class="ml-2"><img src="../assets/to.png" alt=""> <strong>26.01.2019</strong>  Antalya to Mosque</span>
           </div>
-
         </div>
         <div class="col-md-6">
           <div class="float-right d-flex">
@@ -145,10 +144,10 @@
             return {
                 options: [{
                     value: 'descending',
-                    label: 'Price(Descending) '
+                    label: 'Price (Descending) '
                 }, {
                     value: 'ascending',
-                    label: 'Price(Ascending) '
+                    label: 'Price (Ascending) '
                 },],
                 value: '',
                 checkList: ['Option A']
@@ -170,6 +169,7 @@
   .status-header {
     h3 {
       text-transform: capitalize;
+
       > span {
         display: inline-block;
         color: #2c3e50;
