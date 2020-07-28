@@ -64,63 +64,135 @@
                     Flight Data
             =============================-->
         <div class="flight-data">
-          <div class="single-flight-status">
+          <div class="single-flight-area">
 
-            <div class="sf-take-off-time">
-              <span><img src="../assets/to.png" alt=""></span>
-              <span>18.01.2019</span>
-            </div>
+            <div class="single-flight-data">
+              <div class="single-flight-status">
+
+                <div class="sf-take-off-time">
+                  <span><img src="../assets/to.png" alt=""></span>
+                  <span>18.01.2019</span>
+                </div>
 
 
-            <div class="airlines-name">
-              <div class="airlines-logo">
-                <img src="../assets/ta.png" alt="">
-              </div>
-              <div class="flight-info">
                 <div class="airlines-name">
-                  Turkish Airlines
+                  <div class="airlines-logo">
+                    <img src="../assets/ta.png" alt="">
+                  </div>
+                  <div class="flight-info">
+                    <div class="airlines-name">
+                      Turkish Airlines
+                    </div>
+                    <div class="available-seat">
+                      <span>Economy  - </span>
+                      <span>Last 2 seat </span>
+                    </div>
+                  </div>
                 </div>
-                <div class="available-seat">
-                  <span>Economy  - </span>
-                  <span>Last 2 seat </span>
-                </div>
-              </div>
-            </div>
 
 
-            <div class="flight-query-info">
+                <div class="flight-query-info">
 
-              <div class="takeoff-point">
+                  <div class="takeoff-point">
                 <span class="flight-start-time">
                   06:30
                 </span>
-                <span class="flight-city">
+                    <span class="flight-city">
                   MOS
                 </span>
-              </div>
+                  </div>
 
-              <div class="approx-time-distance">
+                  <div class="approx-time-distance">
                 <span class="flight-app-time">
                   3h 15m
                 </span>
-                <div class="flight-type">
-                  Direct Flight
-                </div>
-              </div>
+                    <div class="flight-type">
+                      Direct Flight
+                    </div>
+                  </div>
 
 
-              <div class="landing-point">
+                  <div class="landing-point">
                 <span class="flight-end-time">
                   19:15
                 </span>
-                <span class="destination-city">
+                    <span class="destination-city">
                   AYT
                 </span>
+                  </div>
+
+
+                </div>
+
+
               </div>
+              <div class="single-flight-status">
+
+                <div class="sf-take-off-time">
+                  <span><img src="../assets/land.png" alt=""></span>
+                  <span>18.01.2019</span>
+                </div>
 
 
+                <div class="airlines-name">
+                  <div class="airlines-logo">
+                    <img src="../assets/ta.png" alt="">
+                  </div>
+                  <div class="flight-info">
+                    <div class="airlines-name">
+                      Turkish Airlines
+                    </div>
+                    <div class="available-seat">
+                      <span>Economy  - </span>
+                      <span>Last 2 seat </span>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="flight-query-info">
+
+                  <div class="takeoff-point">
+                <span class="flight-start-time">
+                  06:30
+                </span>
+                    <span class="flight-city">
+                  MOS
+                </span>
+                  </div>
+
+                  <div class="approx-time-distance">
+                <span class="flight-app-time">
+                  3h 15m
+                </span>
+                    <div class="flight-type">
+                      Direct Flight
+                    </div>
+                  </div>
+
+
+                  <div class="landing-point">
+                <span class="flight-end-time">
+                  19:15
+                </span>
+                    <span class="destination-city">
+                  AYT
+                </span>
+                  </div>
+
+
+                </div>
+
+
+              </div>
             </div>
 
+            <div class="flight-amount">
+              <h3>3201.00 $</h3>
+              <small>HOTEL + Flight price</small>
+              <button class="btn btn-primary btn-block">select</button>
+              <button class="btn btn-outline-secondary btn-sm btn-block">show details</button>
+            </div>
 
           </div>
         </div>
@@ -194,7 +266,7 @@
 
   .flight-sidebar {
     padding: 15px;
-    max-width: 300px;
+    max-width: 280px;
     width: 30%;
     flex-shrink: 0;
     background: #ffffff;
@@ -203,8 +275,6 @@
 
   .flight-data {
     flex-grow: 1;
-    background: #fff;
-    padding: 15px;
   }
 
   .sidebar-header {
@@ -217,6 +287,32 @@
     justify-content: space-between;
     margin-top: 40px;
   }
+
+
+  .single-flight-area {
+    display: flex;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+
+  .flight-amount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+      margin: 0;
+      padding: 0;
+    }
+
+    small {
+      margin-bottom: 10px;
+    }
+  }
+
 
   .sf-take-off-time {
     display: flex;
