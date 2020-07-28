@@ -260,17 +260,24 @@
 
   .flight-main {
     display: flex;
-    justify-content: space-between;
-    min-height: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+    align-items: stretch;
+    @media all and (max-width: 800px) {
+      flex-flow: column;
+    }
   }
 
   .flight-sidebar {
     padding: 15px;
-    max-width: 280px;
-    width: 30%;
+    width: 280px;
     flex-shrink: 0;
     background: #ffffff;
     margin-right: 30px;
+    @media all and (max-width: 800px) {
+      width: auto;
+      margin-bottom: 30px;
+    }
   }
 
   .flight-data {
@@ -302,6 +309,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 30px;
 
     h3 {
       margin: 0;
@@ -319,6 +327,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .single-flight-data{
+    flex-grow: 1;
   }
 
   .single-flight-status {
@@ -345,7 +357,6 @@
   .flight-query-info {
     display: flex;
     justify-content: space-between;
-    flex-grow: 1;
   }
 
   .takeoff-point, .landing-point, .approx-time-distance {
