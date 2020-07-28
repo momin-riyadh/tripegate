@@ -85,7 +85,7 @@
                     </div>
                     <div class="available-seat">
                       <span>Economy  - </span>
-                      <span>Last 2 seat </span>
+                      <span class="available-seats">Last 2 seat </span>
                     </div>
                   </div>
                 </div>
@@ -136,15 +136,15 @@
 
                 <div class="airlines-name">
                   <div class="airlines-logo">
-                    <img src="../assets/ta.png" alt="">
+                    <img src="../assets/sa.png" alt="">
                   </div>
                   <div class="flight-info">
                     <div class="airlines-name">
-                      Turkish Airlines
+                      Sun Express
                     </div>
                     <div class="available-seat">
                       <span>Economy  - </span>
-                      <span>Last 2 seat </span>
+                      <span class="available-seats">Last 2 seat </span>
                     </div>
                   </div>
                 </div>
@@ -295,7 +295,6 @@
     margin-top: 40px;
   }
 
-
   .single-flight-area {
     display: flex;
     justify-content: space-between;
@@ -314,10 +313,13 @@
     h3 {
       margin: 0;
       padding: 0;
+      font-weight: 600;
+      font-size: 1.6rem;
     }
 
     small {
       margin-bottom: 10px;
+      font-size: 0.7rem;
     }
   }
 
@@ -329,7 +331,7 @@
     align-items: center;
   }
 
-  .single-flight-data{
+  .single-flight-data {
     flex-grow: 1;
   }
 
@@ -339,7 +341,9 @@
     min-height: 80px;
     justify-content: space-between;
   }
-
+  .available-seats{
+    color: #ff0000;
+  }
   .airlines-name {
     display: flex;
     justify-content: center;
@@ -347,7 +351,7 @@
 
     .airlines-logo {
       img {
-        width: 50px;
+        width: 40px;
         height: auto;
         object-fit: cover;
       }
@@ -357,16 +361,19 @@
   .flight-query-info {
     display: flex;
     justify-content: space-between;
+    flex-basis: 45%;
   }
 
   .takeoff-point, .landing-point, .approx-time-distance {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: #2c3e50;
   }
 
   .approx-time-distance {
     align-items: center;
+
   }
 
   .takeoff-point {
