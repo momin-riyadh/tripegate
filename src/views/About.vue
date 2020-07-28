@@ -3,10 +3,11 @@
     <div class="container mb-4">
       <div class="row">
         <div class="col-md-6 status-header">
-          <h2>Choose Your flights <span>from Moscow to Antalya</span></h2>
+          <h3>Choose Your flights <span>from Moscow to Antalya</span></h3>
           <div class="s-flight-time">
-            <span><img src="../assets/land.png" alt=""> 18.01.2019  Mosque to Antalya</span>
-            <span><img src="../assets/to.png" alt=""> 26.01.2019  Mosque to Antalya</span>
+            <span class="mr-2"><img src="../assets/land.png"
+                                    alt=""> <strong>18.01.2019</strong>  Mosque to Antalya</span>
+            <span class="ml-2"><img src="../assets/to.png" alt=""> <strong>26.01.2019</strong>  Mosque to Antalya</span>
           </div>
 
         </div>
@@ -166,13 +167,20 @@
   }
 
 
-  .status-header{
-    h3{
-      > span{
+  .status-header {
+    h3 {
+      > span {
         display: inline-block;
         color: #2c3e50;
         font-size: 1.1rem;
       }
+    }
+  }
+
+  .s-flight-time {
+    span {
+      color: #2c3e50;
+      font-size: 0.9rem;
     }
   }
 
