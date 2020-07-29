@@ -195,6 +195,137 @@
             </div>
 
           </div>
+          <div class="single-flight-area">
+
+            <div class="single-flight-data">
+              <div class="single-flight-status">
+
+                <div class="sf-take-off-time">
+                  <span><img src="../assets/to.png" alt=""></span>
+                  <span>18.01.2019</span>
+                </div>
+
+
+                <div class="airlines-name">
+                  <div class="airlines-logo">
+                    <img src="../assets/ta.png" alt="">
+                  </div>
+                  <div class="flight-info">
+                    <div class="airlines-name">
+                      Turkish Airlines
+                    </div>
+                    <div class="available-seat">
+                      <span>Economy  - </span>
+                      <span class="available-seats">Last 2 seat </span>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="flight-query-info">
+
+                  <div class="takeoff-point">
+                <span class="flight-start-time">
+                  06:30
+                </span>
+                    <span class="flight-city">
+                  MOS
+                </span>
+                  </div>
+
+                  <div class="approx-time-distance">
+                <span class="flight-app-time">
+                  3h 15m
+                </span>
+                    <div class="flight-type">
+                      Direct Flight
+                    </div>
+                  </div>
+
+
+                  <div class="landing-point">
+                <span class="flight-end-time">
+                  19:15
+                </span>
+                    <span class="destination-city">
+                  AYT
+                </span>
+                  </div>
+
+
+                </div>
+
+
+              </div>
+              <div class="single-flight-status">
+
+                <div class="sf-take-off-time">
+                  <span><img src="../assets/land.png" alt=""></span>
+                  <span>18.01.2019</span>
+                </div>
+
+
+                <div class="airlines-name">
+                  <div class="airlines-logo">
+                    <img src="../assets/sa.png" alt="">
+                  </div>
+                  <div class="flight-info">
+                    <div class="airlines-name">
+                      Sun Express
+                    </div>
+                    <div class="available-seat">
+                      <span>Economy  - </span>
+                      <span class="available-seats">Last 2 seat </span>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="flight-query-info">
+
+                  <div class="takeoff-point">
+                <span class="flight-start-time">
+                  06:30
+                </span>
+                    <span class="flight-city">
+                  MOS
+                </span>
+                  </div>
+
+                  <div class="approx-time-distance">
+                <span class="flight-app-time">
+                  3h 15m
+                </span>
+                    <div class="flight-type">
+                      Direct Flight
+                    </div>
+                  </div>
+
+
+                  <div class="landing-point">
+                <span class="flight-end-time">
+                  19:15
+                </span>
+                    <span class="destination-city">
+                  AYT
+                </span>
+                  </div>
+
+
+                </div>
+
+
+              </div>
+            </div>
+
+            <div class="flight-amount">
+              <h3>3201.00 $</h3>
+              <small>HOTEL + Flight price</small>
+              <button class="btn btn-primary btn-block">select</button>
+              <button class="btn btn-outline-secondary btn-sm btn-block">show details</button>
+            </div>
+
+          </div>
         </div>
       </div>
 
@@ -274,9 +405,9 @@
     flex-shrink: 0;
     background: #ffffff;
     margin-right: 30px;
+    margin-bottom: 30px;
     @media all and (max-width: 800px) {
       width: auto;
-      margin-bottom: 30px;
     }
   }
 
@@ -342,7 +473,7 @@
     justify-content: space-between;
   }
   .available-seats{
-    color: #ff0000;
+    color: #c81717;
   }
   .airlines-name {
     display: flex;
