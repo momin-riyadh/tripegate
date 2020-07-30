@@ -319,7 +319,7 @@
             </div>
 
             <div class="flight-amount">
-              <h3>3201.00 $</h3>
+              <h3>2999.00 $</h3>
               <small>HOTEL + Flight price</small>
               <button class="btn btn-primary btn-block">select</button>
               <button class="btn btn-outline-secondary btn-sm btn-block">show details</button>
